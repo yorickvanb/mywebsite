@@ -149,6 +149,12 @@ h1 {
   color: var(--ivory);
 }
 
+.tertiary {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(247, 240, 234, 0.13);
+  color: var(--ivory);
+}
+
 .accent {
   background: linear-gradient(135deg, var(--rose), var(--rose-deep));
   color: var(--ivory);
