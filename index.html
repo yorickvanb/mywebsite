@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yorick van Boheemen | Actor and Improv Comedian</title>
+    <meta
+      name="description"
+      content="Improv comedian landing page with upcoming shows, videos, socials, and booking links."
+    />
+    <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="stage" hx-boost="true">
+      <section class="card" aria-label="Comedian profile">
+        <div class="avatar-wrap" aria-hidden="true">
+          <img src="img/yorickvanb_insta.jpg" alt="Yorick van Boheemen" class="avatar-image" />
+        </div>
+
+        <header class="header">
+          <p class="eyebrow">actor & improv comedian</p>
+          <h1>Yorick van Boheemen</h1>
+          <p class="tagline">
+            Teaching and performing theatre, scripted or improvised.
+          </p>
+        </header>
+
+        <nav class="link-stack" aria-label="Main links">
+          <!-- <a class="button primary" href="https://example.com/shows" target="_blank" rel="noreferrer"> -->
+            <span class="button-label">Upcoming Shows</span>
+            <span class="button-arrow" aria-hidden="true">✦</span>
+          <!-- </a> -->
+
+          <a class="button secondary" href="https://fareharbor.com/embeds/book/boomchicago/items/321808/availability/1914732002/book" target="_blank" rel="noreferrer">
+            <span class="button-label">October 25 | Thuis Party @ Boom Chicago</span>
+          </a>
+
+          <a class="button secondary" href="https://fareharbor.com/embeds/book/boomchicago/items/321808/availability/1914732005/book/?full-items=yes" target="_blank" rel="noreferrer">
+            <span class="button-label">November 29 | Thuis Party @ Boom Chicago</span>
+          </a>
+
+          <a class="button secondary" href="https://fareharbor.com/embeds/book/boomchicago/items/321808/availability/2130049799/book/?full-items=yes" target="_blank" rel="noreferrer">
+            <span class="button-label">December 13 | Thuis Party @ Boom Chicago</span>
+          </a>
+
+          <a class="button accent" href="mailto:yorickvanb@gmail.com" target="_blank" rel="noreferrer">
+            <span class="button-label">Book me</span>
+            <span class="button-arrow" aria-hidden="true">✦</span>
+          </a>
+
+          <a class="button secondary" href="mailto:yorickvanb@gmail.com" target="_blank" rel="noreferrer">
+            <span class="button-label">Book to perform</span>
+          </a>
+
+          <a class="button secondary" href="mailto:yorickvanb@gmail.com" target="_blank" rel="noreferrer">
+            <span class="button-label">Book to teach</span>
+          </a>
+        </nav>
+
+        <div class="social-row" aria-label="Social media and support links">
+          <a href="https://www.youtube.com/@AlasPoorComedy" class="social-link" target="_blank" rel="noreferrer" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M23.5 6.5a3.1 3.1 0 0 0-2.18-2.2C19.56 3.8 12 3.8 12 3.8s-7.56 0-9.32.5A3.1 3.1 0 0 0 .5 6.5 32.2 32.2 0 0 0 0 12a32.2 32.2 0 0 0 .5 5.5 3.1 3.1 0 0 0 2.18 2.2C4.44 20.2 12 20.2 12 20.2s7.56 0 9.32-.5a3.1 3.1 0 0 0 2.18-2.2A32.2 32.2 0 0 0 24 12a32.2 32.2 0 0 0-.5-5.5ZM9.75 15.5v-7l6.25 3.5-6.25 3.5Z"/></svg>
+          </a>
+
+          <a href="https://www.instagram.com/yorickvanb" class="social-link" target="_blank" rel="noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5Zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7Zm5 3.2A4.8 4.8 0 1 1 7.2 12 4.8 4.8 0 0 1 12 7.2Zm0 2A2.8 2.8 0 1 0 14.8 12 2.8 2.8 0 0 0 12 9.2Zm5.1-3.2a1.1 1.1 0 1 1-1.1 1.1 1.1 1.1 0 0 1 1.1-1.1Z"/></svg>
+          </a>
+
+          <!-- <a href="https://www.buymeacoffee.com" class="social-link" target="_blank" rel="noreferrer" aria-label="Buy me a coffee">
+            <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M7 3.5h10a2 2 0 0 1 2 2V8a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4V5.5a2 2 0 0 1 2-2Zm0 2v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V5.5H7Zm-1 7h12v1.5a5.5 5.5 0 0 1-5.5 5.5h-1a5.5 5.5 0 0 1-5.5-5.5V12.5Zm9.5 3.5h2a1.5 1.5 0 0 1 0 3h-2v-3ZM6 18.5h.5V20h1.5v-2.5H6Zm3 0h.5V20h1.5v-2.5H9Z"/></svg>
+          </a> -->
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
